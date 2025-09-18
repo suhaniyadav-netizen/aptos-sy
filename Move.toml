@@ -1,0 +1,15 @@
+[package]
+name = "SChain"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule = "0x29d4161667b347ece874b3059d953b36f1b79a5c7b6cb8de8ea1127607504b45"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
