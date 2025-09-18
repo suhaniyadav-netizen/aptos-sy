@@ -1,71 +1,42 @@
 # Blockchain Based Polls
 
-A simple smart contract for creating and managing polls on the Aptos blockchain.
+## Description
 
-## What is this?
+Blockchain Based Polls is a decentralized voting system built on the Aptos blockchain using the Move programming language. This smart contract enables users to create transparent, tamper-proof polls where anyone can participate in voting. The system ensures election integrity by preventing double voting and maintaining all records permanently on the blockchain.
 
-This project lets you create polls that live on the blockchain. Once a poll is created, people can vote on it, and all votes are permanently recorded and can't be changed or faked.
+The contract consists of two main functions: creating polls with multiple choice options and casting votes. Each poll stores the question, available options, vote counts, and a list of participants who have already voted. This creates a completely transparent and verifiable voting process that eliminates the need for trusted intermediaries.
 
-## Features
+## Vision
 
-- Create polls with multiple choice options
-- Vote on existing polls
-- Prevents people from voting twice
-- All results are stored permanently on the blockchain
-- Completely transparent and tamper-proof
+Our vision is to democratize the polling and voting process by leveraging blockchain technology to create a trustless, transparent, and accessible platform for decision-making. We aim to eliminate voter fraud, increase participation in democratic processes, and provide a reliable infrastructure for organizations, communities, and individuals to conduct fair and verifiable polls.
 
-## How it works
+We envision a world where every voice can be heard without fear of manipulation, where voting results are instantly verifiable by anyone, and where the barriers to conducting legitimate polls are minimized through blockchain technology.
 
-### Creating a Poll
+## Future Scope
 
-Anyone can create a poll by calling the `create_poll` function with:
-- A question (like "What's your favorite programming language?")
-- A list of options (like ["Python", "JavaScript", "Rust", "Move"])
+### Short-term Goals (6 months)
+- Add poll expiration dates and automatic closure functionality
+- Implement weighted voting based on token holdings
+- Create a user-friendly web interface for poll creation and voting
+- Add poll categories and tagging system for better organization
 
-### Voting
+### Medium-term Goals (1-2 years)
+- Integration with decentralized identity systems for verified voting
+- Multi-chain support to expand accessibility across different blockchains
+- Advanced analytics dashboard for poll creators
+- Mobile application for seamless voting experience
+- Integration with governance tokens for DAO decision-making
 
-To vote on a poll:
-- Call the `cast_vote` function
-- Specify which option you want to vote for
-- The system checks that you haven't voted before
-- Your vote gets recorded permanently
+### Long-term Goals (3+ years)
+- Enterprise solutions for corporate governance and shareholder voting
+- Integration with government systems for municipal and organizational elections
+- AI-powered poll recommendations and trend analysis
+- Cross-platform integration with social media and communication tools
+- Development of a comprehensive governance framework for large-scale democratic processes
 
-## Smart Contract Functions
-
-### `create_poll(creator, question, options)`
-Creates a new poll with your question and answer choices.
-
-### `cast_vote(voter, poll_owner, option_index)`
-Lets you vote on someone's poll by picking one of the options.
-
-## Security Features
-
-- **No double voting**: Each address can only vote once per poll
-- **Immutable results**: Once votes are cast, they can't be changed
-- **Transparent**: Anyone can verify the results
-- **Decentralized**: No single authority controls the polls
-
-## Getting Started
-
-1. Deploy the smart contract to Aptos blockchain
-2. Create a poll using the `create_poll` function
-3. Share your poll with others so they can vote
-4. Watch the results update in real-time on the blockchain
-
-## Why use blockchain for polls?
-
-Traditional polls can be manipulated or hacked. By using blockchain:
-- Results are impossible to fake
-- Everyone can verify the vote counts
-- No central authority can change results
-- Votes are permanent and transparent
-
-## Requirements
-
-- Aptos wallet
-- Basic understanding of blockchain transactions
-- Move programming language knowledge (for developers)
-
-## License
-
-This project is open source and available for anyone to use or modify.
+### Technical Enhancements
+- Privacy-preserving voting mechanisms using zero-knowledge proofs
+- Scalability improvements for handling millions of simultaneous votes
+- Advanced smart contract features like conditional voting and multi-stage polls
+- Integration with oracle networks for real-world data verification
+- Development of a complete ecosystem including poll marketplaces and reputation systems
